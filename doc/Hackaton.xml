@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hackaton</name>
+    </assembly>
+    <members>
+        <member name="T:Hackaton.Pages.Index">
+            <summary>
+            Application root page
+            </summary>
+        </member>
+        <member name="M:Hackaton.Pages.Index.OnGet">
+            <summary>
+            Triggered when getting the page
+            </summary>
+        </member>
+        <member name="T:Hackaton.Program">
+            <summary>
+            Application entrypoint class
+            </summary>
+        </member>
+        <member name="M:Hackaton.Program.Main(System.String[])">
+            <summary>
+            Application entrypoint method
+            </summary>
+            <param name="args">Command line arguments</param>
+        </member>
+        <member name="M:Hackaton.Program.BuildWebHost(System.String[])">
+            <summary>
+            Builds a web host with command line arguments
+            </summary>
+            <param name="args">Command line arguments</param>
+            <returns>The built web host</returns>
+        </member>
+        <member name="T:Hackaton.Startup">
+            <summary>
+            Class instantiated when starting the application up
+            </summary>
+        </member>
+        <member name="M:Hackaton.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hackaton.Startup"/> class.
+            </summary>
+            <param name="configuration">Configuration to apply</param>
+        </member>
+        <member name="P:Hackaton.Startup.Configuration">
+            <summary>
+            Gets applied configuration
+            </summary>
+        </member>
+        <member name="M:Hackaton.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Services collection to which services will be added</param>
+        </member>
+        <member name="M:Hackaton.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">Application builder</param>
+            <param name="env">Hosting environment</param>
+        </member>
+    </members>
+</doc>
